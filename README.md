@@ -1,3 +1,5 @@
+免责声明：readme也是AI写的
+
 # Fluid X-ray (流体透视)
 
 适用于 **Minecraft 1.20.1 / Forge 47.x** 的**纯客户端**模组。
