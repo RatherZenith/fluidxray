@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+# Declares the Mixin configuration to FML. NeoForge bundles Mixin at runtime, so no
+# separate Gradle plugin (and no refmap) is required.
+[[mixins]]
+config="fluidxray.mixins.json"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="ZR4U"
+logoFile="logo.png"
+displayTest="IGNORE_ALL_VERSION"
+description='''A client-side underfluid seethrough mod. Press G or use command /fluidxray to switch.'''
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
+    ordering="NONE"
+    side="CLIENT"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="CLIENT"
